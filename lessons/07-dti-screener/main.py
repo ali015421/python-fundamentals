@@ -1,12 +1,13 @@
 print("Quick Screening Tool")
 
-income = int(input("Please enter your monthly income: "))ebt_payments = int(input("Please enter your monthly debt payments: "))
+income = int(input("Please enter your monthly income: "))
+debt_payments = int(input("Please enter your monthly debt payments: "))
 
-def dti(monthly_income, monthly_debt):
+def dti(income, debt):
     ratio = debt / income
     return ratio
 
-result = dti(monthly_income, monthly_debt_payments)
+result = dti(income, debt_payments)
 
 if result < 0.40:
     print(f"Approved. DTI: {result * 100}%")
