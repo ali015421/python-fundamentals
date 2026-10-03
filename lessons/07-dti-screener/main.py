@@ -1,4 +1,4 @@
-print("Quick Screening Tool")
+print("-----Quick Screening Tool-----")
 
 income = int(input("Please enter your monthly income: "))
 debt_payments = int(input("Please enter your monthly debt payments: "))
